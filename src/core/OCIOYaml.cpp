@@ -30,42 +30,42 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #include <OpenColorIO/OpenColorIO.h>
 
-#ifndef WIN32
+// #ifndef WIN32
 
-// fwd declare yaml-cpp visibility
-#pragma GCC visibility push(hidden)
-namespace YAML {
-    class Exception;
-    class BadDereference;
-    class RepresentationException;
-    class EmitterException;
-    class ParserException;
-    class InvalidScalar;
-    class KeyNotFound;
-    template <typename T> class TypedKeyNotFound;
-    template <> class TypedKeyNotFound<OCIO_NAMESPACE::ColorSpace>;
-    template <> class TypedKeyNotFound<OCIO_NAMESPACE::Config>;
-    template <> class TypedKeyNotFound<OCIO_NAMESPACE::Exception>;
-    template <> class TypedKeyNotFound<OCIO_NAMESPACE::GpuShaderDesc>;
-    template <> class TypedKeyNotFound<OCIO_NAMESPACE::ImageDesc>;
-    template <> class TypedKeyNotFound<OCIO_NAMESPACE::Look>;
-    template <> class TypedKeyNotFound<OCIO_NAMESPACE::Processor>;
-    template <> class TypedKeyNotFound<OCIO_NAMESPACE::Transform>;
-    template <> class TypedKeyNotFound<OCIO_NAMESPACE::AllocationTransform>;
-    template <> class TypedKeyNotFound<OCIO_NAMESPACE::CDLTransform>;
-    template <> class TypedKeyNotFound<OCIO_NAMESPACE::ColorSpaceTransform>;
-    template <> class TypedKeyNotFound<OCIO_NAMESPACE::DisplayTransform>;
-    template <> class TypedKeyNotFound<OCIO_NAMESPACE::ExponentTransform>;
-    template <> class TypedKeyNotFound<OCIO_NAMESPACE::FileTransform>;
-    template <> class TypedKeyNotFound<OCIO_NAMESPACE::GroupTransform>;
-    template <> class TypedKeyNotFound<OCIO_NAMESPACE::LogTransform>;
-    template <> class TypedKeyNotFound<OCIO_NAMESPACE::LookTransform>;
-    template <> class TypedKeyNotFound<OCIO_NAMESPACE::MatrixTransform>;
-    template <> class TypedKeyNotFound<OCIO_NAMESPACE::TruelightTransform>;
-}
-#pragma GCC visibility pop
+// // fwd declare yaml-cpp visibility
+// #pragma GCC visibility push(hidden)
+// namespace YAML {
+    // class Exception;
+    // class BadDereference;
+    // class RepresentationException;
+    // class EmitterException;
+    // class ParserException;
+    // class InvalidScalar;
+    // class KeyNotFound;
+    // template <typename T> class TypedKeyNotFound;
+    // template <> class TypedKeyNotFound<OCIO_NAMESPACE::ColorSpace>;
+    // template <> class TypedKeyNotFound<OCIO_NAMESPACE::Config>;
+    // template <> class TypedKeyNotFound<OCIO_NAMESPACE::Exception>;
+    // template <> class TypedKeyNotFound<OCIO_NAMESPACE::GpuShaderDesc>;
+    // template <> class TypedKeyNotFound<OCIO_NAMESPACE::ImageDesc>;
+    // template <> class TypedKeyNotFound<OCIO_NAMESPACE::Look>;
+    // template <> class TypedKeyNotFound<OCIO_NAMESPACE::Processor>;
+    // template <> class TypedKeyNotFound<OCIO_NAMESPACE::Transform>;
+    // template <> class TypedKeyNotFound<OCIO_NAMESPACE::AllocationTransform>;
+    // template <> class TypedKeyNotFound<OCIO_NAMESPACE::CDLTransform>;
+    // template <> class TypedKeyNotFound<OCIO_NAMESPACE::ColorSpaceTransform>;
+    // template <> class TypedKeyNotFound<OCIO_NAMESPACE::DisplayTransform>;
+    // template <> class TypedKeyNotFound<OCIO_NAMESPACE::ExponentTransform>;
+    // template <> class TypedKeyNotFound<OCIO_NAMESPACE::FileTransform>;
+    // template <> class TypedKeyNotFound<OCIO_NAMESPACE::GroupTransform>;
+    // template <> class TypedKeyNotFound<OCIO_NAMESPACE::LogTransform>;
+    // template <> class TypedKeyNotFound<OCIO_NAMESPACE::LookTransform>;
+    // template <> class TypedKeyNotFound<OCIO_NAMESPACE::MatrixTransform>;
+    // template <> class TypedKeyNotFound<OCIO_NAMESPACE::TruelightTransform>;
+// }
+// #pragma GCC visibility pop
 
-#endif
+// #endif
 
 #ifdef WIN32
 #pragma warning( push )
